@@ -242,8 +242,8 @@ HTTP/1.1  409
 Content-Type: application/json
 
 {
-    "error": {
-	    "code": "ERR_CONFLICT",
+	"error": {
+		"code": "ERR_CONFLICT",
 		"message": "Any message which should help the user to resolve the conflict",
 	}
 }
@@ -256,8 +256,8 @@ HTTP/1.1  429
 Content-Type: application/json
 
 {
-    "error": {
-	    "code": "ERR_RATE_LIMIT",
+	"error": {
+		"code": "ERR_RATE_LIMIT",
 		"message": "The request cannot be served due to the rate limit having been exhausted for the resource",
 	}
 }
@@ -270,8 +270,8 @@ HTTP/1.1  500
 Content-Type: application/json
 
 {
-    "error": {
-	    "code": "ERR_INTERNAL_SERVER",
+	"error": {
+		"code": "ERR_INTERNAL_SERVER",
 		"message": "Something is broken",
 	}
 }
@@ -285,7 +285,7 @@ Content-Type: application/json
 
 {
     "error": {
-	    "code": "ERR_SERVICE_UNAVAILABLE",
+		"code": "ERR_SERVICE_UNAVAILABLE",
 		"message": "The server is up, but overloaded with requests. Try again later!",
 	}
 }
