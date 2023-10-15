@@ -9,7 +9,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 1- GET - Get single item - HTTP Response Code: **200**
 
-```json
+```javascript
 	HTTP/1.1 200
 	Content-Type: application/json
 	
@@ -27,7 +27,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 2- GET - Get item list - HTTP Response Code: **200**
 
-```json
+```javascript
 	HTTP/1.1 200
 	Pagination-Count: 100
 	Pagination-Page: 5
@@ -62,7 +62,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 3- POST - Create a new item - HTTP Response Code: **201**
 
-```json
+```javascript
 	HTTP/1.1  201
 	Location: /v1/items/12
 	Content-Type: application/json
@@ -76,7 +76,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 > If updated entity is to be sent after the update
 
-```json
+```javascript
 	HTTP/1.1  200
 	Content-Type: application/json
 	
@@ -93,7 +93,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 > If updated entity is not to be sent after the update
 
-```json
+```javascript
 	HTTP/1.1  204
 	Content-Type: application/json
 	
@@ -104,7 +104,7 @@ Response is always contain `message` field, to warn user which have been affecte
 
 5- DELETE - Delete an item - HTTP Response Code: **204**
 
-```json
+```javascript
 	HTTP/1.1  204
 	
 	{
@@ -117,7 +117,7 @@ When your API encounters an error, it should return a response with the appropri
 
 1- GET - HTTP Response Code: **404**
 
-```json
+```javascript
 	HTTP/1.1  404
 	Content-Type: application/json
 	
@@ -128,7 +128,7 @@ When your API encounters an error, it should return a response with the appropri
 
 2- DELETE - HTTP Response Code: **404**
 
-```json
+```javascript
 	HTTP/1.1  404
 	Content-Type: application/json
 
@@ -143,7 +143,7 @@ When your API encounters an error, it should return a response with the appropri
 
 3- POST - HTTP Response Code: **400**
 
-```json
+```javascript
 	HTTP/1.1  400
 	Content-Type: application/json
 
@@ -173,7 +173,7 @@ When your API encounters an error, it should return a response with the appropri
 
 4- PATCH - HTTP Response Code: **400/404**
 
-```json
+```javascript
 	HTTP/1.1  400
 	Content-Type: application/json
 	
@@ -206,7 +206,7 @@ When your API encounters an error, it should return a response with the appropri
 
 5- VERB Unauthorized - HTTP Response Code: **401**
 
-```json
+```javascript
 	HTTP/1.1  401
 	Content-Type: application/json
 
@@ -220,7 +220,7 @@ When your API encounters an error, it should return a response with the appropri
 
 6- VERB Forbidden - HTTP Response Code: **403**
 
-```json
+```javascript
 	HTTP/1.1  403
 	Content-Type: application/json
 
@@ -234,7 +234,7 @@ When your API encounters an error, it should return a response with the appropri
 
 7- VERB Conflict - HTTP Response Code: **409**
 
-```json
+```javascript
 	HTTP/1.1  409
 	Content-Type: application/json
 	
@@ -248,7 +248,7 @@ When your API encounters an error, it should return a response with the appropri
 
 8- VERB Too Many Requests - HTTP Response Code: **429**
 
-```json
+```javascript
 	HTTP/1.1  429
 	Content-Type: application/json
 	
@@ -262,7 +262,7 @@ When your API encounters an error, it should return a response with the appropri
 
 9- VERB Internal Server Error - HTTP Response Code: **500**
 
-```json
+```javascript
 	HTTP/1.1  500
 	Content-Type: application/json
 	
@@ -276,7 +276,7 @@ When your API encounters an error, it should return a response with the appropri
 
 10- VERB Service Unavailable - HTTP Response Code: **503**
 
-```json
+```javascript
 	HTTP/1.1  503
 	Content-Type: application/json
 	
@@ -290,7 +290,7 @@ When your API encounters an error, it should return a response with the appropri
 
 ## Validation Error Format
 
-```json
+```javascript
 	HTTP/1.1  400
 	Content-Type: application/json
 
