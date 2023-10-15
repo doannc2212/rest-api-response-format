@@ -125,23 +125,27 @@ HTTP/1.1  404
 Content-Type: application/json
 
 {
-    "message": "The item does not exist" /* skip or optional error message */
+	"message": "The item does not exist", /* skip or optional error message */
+	"error": {
+		 "code": "ERR_NOT_FOUND",
+		 "message": "The item does not exist"
+	}
 }
 ```
 
 2- DELETE - HTTP Response Code: **404**
 
 ```javascript
-	HTTP/1.1  404
-	Content-Type: application/json
+HTTP/1.1  404
+Content-Type: application/json
 
-	{
-	    "message": "The item does not exist", /* skip or optional error message */
-	    "error": {
-		     "code": "ERR_NOT_FOUND",
-		     "message": "The item does not exist"
-	    }
+{
+	"message": "The item does not exist", /* skip or optional error message */
+	"error": {
+		 "code": "ERR_NOT_FOUND",
+		 "message": "The item does not exist"
 	}
+}
 ```
 
 3- POST - HTTP Response Code: **400**
@@ -159,14 +163,12 @@ Content-Type: application/json
 				{
 					"message": "Oops! The value is invalid",
 					"code": 34,
-					"field": "email"
 				}
 			],
 			"phoneNumber": [
 				{
 					"message": "Oops! The format is not correct",
 					"code": 35,
-					"field": "phoneNumber"
 				}
 			]
 		}
