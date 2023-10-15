@@ -7,14 +7,19 @@ export interface PaginationResponse<T = unknown> {
   data: T[]
 }
 
-export interface ApiError {
+export interface TError {
   code: string | number
   message: string
-  details?: Record<string, ApiError[]>
+  details?: Record<string, TError[]>
 }
 
-export interface ApiResponse<T = unknown> {
+export type ApiResponse<T = unknown> = {
   message?: string
-  data?: T
-  error?: ApiError
-}
+} & (
+  | {
+    data?: T
+  }
+  | {
+    error?: TError
+  }
+)
