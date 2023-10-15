@@ -1,4 +1,4 @@
-import { type ApiResponse } from './types'
+import { type ApiResponse, type PaginationResponse } from './types'
 
 const successSingle: ApiResponse = {
   message: 'Success',
@@ -10,7 +10,7 @@ const successSingle: ApiResponse = {
   }
 }
 
-const successList: ApiResponse = {
+const successList: ApiResponse<PaginationResponse<unknown>> = {
   message: 'Success',
   data: {
     current: 5,
@@ -130,16 +130,10 @@ const failureBadGateway: ApiResponse = {
     message: 'The server is up, but overloaded with requests. Try again later!'
   }
 }
-interface MockResponse {
-  success: Record<
-  string,
-  { data: ApiResponse, status: number, method: string[] }
-  >
-  failure: Record<
-  string,
-  { data: ApiResponse, status: number, method: string[] }
-  >
-}
+type MockResponse = Record<
+'success' | 'failure',
+Record<string, { data: ApiResponse, status: number, method: string[] }>
+>
 
 export const mockResponse: MockResponse = {
   success: {
