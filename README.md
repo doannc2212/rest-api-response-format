@@ -125,7 +125,7 @@ HTTP/1.1  404
 Content-Type: application/json
 
 {
-	"message": "The item does not exist", /* skip or optional error message */
+	"message": "Not found", /* skip or optional error message */
 	"error": {
 		 "code": "ERR_NOT_FOUND",
 		 "message": "The item does not exist"
@@ -324,6 +324,8 @@ Avoid using 'X-' in custom headers: https://tools.ietf.org/html/rfc6648
 
 Fork:
 https://github.com/cryptlex/rest-api-response-format#rest-api-error-responses
+
 Error handling:
 https://codedamn.com/news/backend/advanced-error-handling-in-rest-apis Api
+
 Example: https://www.postman.com/twitter/workspace/twitter-s-public-workspace
