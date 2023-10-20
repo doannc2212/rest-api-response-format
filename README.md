@@ -1,8 +1,3 @@
-## Rest API Popular Endpoint Formats
-
-> https://api.example.com/v1/items
-
-> https://example.com/api/v1/items
 
 ## Rest API Success Responses
 
@@ -326,6 +321,8 @@ Fork:
 https://github.com/cryptlex/rest-api-response-format#rest-api-error-responses
 
 Error handling:
-https://codedamn.com/news/backend/advanced-error-handling-in-rest-apis Api
+https://codedamn.com/news/backend/advanced-error-handling-in-rest-apis
 
 Example: https://www.postman.com/twitter/workspace/twitter-s-public-workspace
+
+https://github.com/ByteByteGoHq/system-design-101#how-do-we-design-effective-and-safe-apis
