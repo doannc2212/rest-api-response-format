@@ -181,13 +181,12 @@ Content-Type: application/json
 	"error": {
 		"code": "ERR_INVALID_INPUT",
 		"message": "Invalid input data.",
-		"details": {
-			"phoneNumber": [
-				{
-					"message": "Oops! The format is not correct",
-					"code": 35,
-				}
-			]
+		"details": [
+			{
+				"name": "phoneNumber",
+				"message": "Oops! The format is not correct",
+				"code": 35,
+			}
 		}
 	}
 }
@@ -298,14 +297,13 @@ Content-Type: application/json
 	"error": {
 		"code": "ERR_INVALID_INPUT",
 		"message": "Invalid input data.",
-		"details": {
-			"phoneNumber": [
-				{
-					"message": "Oops! The format is not correct",
-					"code": 35,
-				}
-			]
-		}
+		"details": [
+			{
+				"name": "phoneNumber",
+				"message": "Oops! The format is not correct",
+				"code": 35,
+			},
+		]
 	}
 }
 ```
