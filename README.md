@@ -32,13 +32,14 @@ Content-Type: application/json
 
 {
 	"message": "success",
-	"data": {
+	"meta": {
 		"current": 5,
 		"total": 64,
 		"size": 20,
 		"hasNext": true,
 		"hasPrevious": true,
-		"data": [
+	},
+	"data": [
 			{
 				"id": 10,
 				"name": "shirt",
@@ -51,8 +52,7 @@ Content-Type: application/json
 				"color": "black",
 				"price": "$2300"
 			}
-		]
-	}
+	]
 }
 ```
 
